@@ -1,0 +1,62 @@
+.bf-categories {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.bf-category {
+  &-block {
+    position: relative;
+    background-color: white;
+    width: 225px;
+    height: 140px;
+    padding: 8px 15px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &--light-blue {
+      background-image: url(../assets/oval-light-blue.svg);
+    }
+    &--light-violet {
+      background-image: url(../assets/oval-light-violet.svg);
+    }
+    &--violet {
+        background-image: url(../assets/oval-violet.svg);
+    }
+    &--turquoise {
+        background-image: url(../assets/oval-turquoise.svg);
+    }
+
+    &__product-image {
+
+    }
+    .bf-deal-btn {
+      position: absolute;
+      bottom: 14px;
+      left: 15px;
+    }
+  }
+  &-title {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    &__text {
+      color: #52667d;
+      font-family: $primary-font-family;
+      text-transform: capitalize;
+      &--name {
+        font-size: 16px;
+        line-height: 1.56;
+        font-weight: 400;
+      }
+      &--deal {
+        font-size: 24px;
+        line-height: 1.04;
+      }
+    }
+  }
+}

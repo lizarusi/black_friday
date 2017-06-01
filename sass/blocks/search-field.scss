@@ -1,0 +1,35 @@
+.bf-search-field {
+  display: flex;
+  flex-direction: row;
+  input {
+    width: 555px;
+    height: 30px;
+    background-color: white;
+    border: solid 1px #cedfe1;
+    padding: 0 13px;
+    border-right: none;
+    outline: none;
+    //todo: move this to mixins
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+    //
+    &::placeholder, & {
+      font-family: $primary-font-family;
+      font-size: 14px;
+      font-weight: 500;
+      color: #8b9db0;
+    }
+
+  }
+  &__search-btn {
+    @include basic-button-style;
+    width: 30px;
+    height: 30px;
+    background-color: #ffb200;
+    background-image: url(../assets/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 18px;
+  }
+}

@@ -1,0 +1,17 @@
+@mixin basic-button-style {
+  -ms-touch-action: none;
+  touch-action: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  outline:none;
+  -ms-user-select: none;
+  user-select: none;
+  border:none;
+
+}
+
+@mixin basic-link-style {
+  text-decoration: none;
+  color: inherit;
+}

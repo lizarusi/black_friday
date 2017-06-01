@@ -1,0 +1,35 @@
+.bf-footer {
+  padding: 25px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.bf-footer-nav {
+  display: flex;
+  &__item {
+    @include basic-link-style;
+    text-transform: capitalize;
+    font-family: $primary-font-family;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #588e9a;
+    &--upercase {
+      text-transform: uppercase;
+    }
+    &--copyright {
+      font-size: 12px;
+      line-height: 1.67;
+      text-transform: none;
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 0 0 20%;
+  }
+  &__block:last-child {
+    margin-left: auto;
+  }
+}

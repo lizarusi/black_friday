@@ -1,0 +1,17 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+}
+* {
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,p,span {
+  margin: 0;
+  padding: 0;
+}
+.bf-container {
+  max-width: 1185px;
+  margin: 0 auto;
+  position: relative;
+}

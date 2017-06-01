@@ -1,0 +1,97 @@
+
+.bf-product-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 325px;
+  justify-content: space-between;
+  padding: 15px;
+  .bf-deal-btn {
+    width: 100%;
+    &::after {
+      margin-left: 5px;
+    }
+  }
+  &--link {
+    @include basic-link-style;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__left-logo { //if it needed something else, move it to separete block
+    height: 15px;
+  }
+  &__right-discount {
+    font-family: $primary-font-family;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffaa00;
+  }
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    img {
+      max-height: 110px;
+    }
+  }
+  &__inf-part {
+    // padding-bottom: 17px;
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color:  #cedfe1;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-family: $primary-font-family;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.29;
+    color: #6599a3;
+  }
+
+  &__condition {
+    font-family: $primary-font-family;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #4a5f77;
+    margin-bottom: 17px;
+    span {
+      padding: 2px;
+      font-weight: 400;
+      background-color: #f3f5f6;
+      font-size: 11px;
+      text-transform: capitalize;
+      line-height: 1;
+      color: #4a5f77;
+    }
+  }
+
+  &__price {
+     font-family: $primary-font-family;
+     font-size: 20px;
+     color: #52667d;
+     &--prev-price {
+       text-decoration: line-through;
+       font-size: 14px;
+       font-weight: 600;
+       color: #6599a3;
+     }
+  }
+}
+.bf-product-wrap {
+  padding:  calc(#{$distance-btw-products-box--tob}/2) calc(#{$distance-btw-products-box--lor}/2);
+
+}

@@ -1,0 +1,9 @@
+.bf-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(#{-$distance-btw-products-box--tob}/2)
+  calc(#{-$distance-btw-products-box--lor}/2);
+  .bf-product-wrap {
+    flex: 0 0 20%;
+  }
+}

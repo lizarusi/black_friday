@@ -1,0 +1,44 @@
+.bf-header {
+ width: 100%;
+ margin: 0 auto;
+ height: 290px;
+ background-image: url('../assets/group-8.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+ padding-top: 84px;
+ &__title {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.02;
+  text-align: center;
+  color: $title-color;
+ }
+ &__subtitle {
+  font-family: $primary-font-family;
+  font-size: 20px;
+  line-height: 2.05;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #6599a3;
+ }
+}
+.bf-shops-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bf-shop-logo {
+  margin: 0 7.5px;
+  width: 105px;
+  height: 50px;
+  opacity: 0.9;
+  background-color: #eff6f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__image {
+
+  }
+}
