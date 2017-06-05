@@ -3,10 +3,14 @@
   text-align: left;
   background-color: white;
   margin-top: 30px;
+  .bf-container {
+
+  }
 }
 
 .bf-footer-nav {
   display: flex;
+  margin: 0 calc(-#{$distance-btw-products-box--lor}/2);
   &__item {
     @include basic-link-style;
     text-transform: capitalize;
@@ -28,6 +32,10 @@
     flex-direction: column;
     text-align: left;
     flex: 0 0 20%;
+    padding-left: calc(#{$distance-btw-products-box--lor}/2);
+  }
+  &__block + &__block {
+
   }
   &__block:last-child {
     margin-left: auto;
