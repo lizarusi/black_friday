@@ -3,13 +3,18 @@
   text-align: left;
   background-color: white;
   margin-top: 30px;
+  @include respond-to('mobile'){
+    padding: 15px 0;
+    min-height: 175px;
+  };
   .bf-container {
-
+    height: 100%;
   }
 }
 
 .bf-footer-nav {
   display: flex;
+  height: 100%;
   margin: 0 calc(-#{$distance-btw-products-box--lor}/2);
   &__item {
     @include basic-link-style;
@@ -22,6 +27,7 @@
       text-transform: uppercase;
     }
     &--copyright {
+      margin-top: auto;
       font-size: 12px;
       line-height: 1.67;
       text-transform: none;
@@ -33,11 +39,28 @@
     text-align: left;
     flex: 0 0 20%;
     padding-left: calc(#{$distance-btw-products-box--lor}/2);
+    @include respond-to('tablet'){
+      flex: 0 0 33.333%;
+    };
+    @include respond-to('mobile'){
+      display: none;
+    };
+  }
+  &__block:nth-last-child(2){
+    @include respond-to('tablet'){
+      display: none;
+    };
   }
   &__block + &__block {
 
   }
   &__block:last-child {
     margin-left: auto;
+    @include respond-to('mobile'){
+      display: flex;
+      flex: 0 0 100%;
+      margin: none;
+      align-items: center;
+    };
   }
 }

@@ -1,7 +1,9 @@
 @import "variables/colors.scss";
 @import "variables/fonts-variables.scss";
 @import "variables/distances.scss";
+@import "variables/screens.scss";
 @import "mixins/general.scss";
+@import "mixins/respond.scss";
 @import "blocks/header.scss";
 @import "blocks/search-field.scss";
 @import "blocks/top-nav.scss";

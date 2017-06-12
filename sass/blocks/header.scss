@@ -1,19 +1,47 @@
 .bf-header {
  width: 100%;
+ @include respond-to('desktop') {
+    max-width: 1185px;
+ };
  margin: 0 auto;
  height: 290px;
  background-image: url('../assets/group-8.png');
+ @include respond-to('tablet'){
+   background-image: url('../assets/bg-tablet.jpg');
+   height: 188px;
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+ };
+ @include respond-to('mobile'){
+   background-image: url('../assets/bg-mob.jpg');
+   height: 200px;
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+ };
+ background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
  padding-top: 84px;
  &__title {
-  font-family: Lato;
+  font-family: $primary-font-family;
   font-size: 40px;
   font-weight: 300;
   line-height: 1.02;
   text-align: center;
   color: $title-color;
- }
+
+ };
+ &__the-best {
+   @include respond-to('mobie'){
+     display: block;
+   };
+ };
  &__subtitle {
   font-family: $primary-font-family;
   font-size: 20px;
@@ -24,13 +52,16 @@
  }
 }
 .bf-shops-list {
+  display: none;
+  @include respond-to('desktop'){
+    display: flex;
+  };
   margin-top: 32px;
-  display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .bf-shop-logo {
-  margin: 0 7.5px;
+  margin: 0 7.5px 7.5px;
   width: 105px;
   height: 50px;
   opacity: 0.9;

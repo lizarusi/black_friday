@@ -1,8 +1,14 @@
 .bf-search-field {
   display: flex;
+  padding: 0 15px;
   flex-direction: row;
+  flex: 0 2 555px;
   input {
-    width: 555px;
+    // width: 555px;
+    // @include respond-to('tablet'){
+    //   width: 390px;
+    // };
+    flex-grow: 1;
     height: 30px;
     background-color: white;
     border: solid 1px #cedfe1;
