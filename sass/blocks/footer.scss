@@ -5,7 +5,6 @@
   margin-top: 30px;
   @include respond-to('mobile'){
     padding: 15px 0;
-    min-height: 175px;
   };
   .bf-container {
     height: 100%;
@@ -14,7 +13,7 @@
 
 .bf-footer-nav {
   display: flex;
-  height: 100%;
+  min-height: 175px;
   margin: 0 calc(-#{$distance-btw-products-box--lor}/2);
   &__item {
     @include basic-link-style;
@@ -27,11 +26,22 @@
       text-transform: uppercase;
     }
     &--copyright {
-      margin-top: auto;
+      @include respond-to('mobile'){
+        margin-top: auto;
+      };
       font-size: 12px;
       line-height: 1.67;
       text-transform: none;
+      &-line {
+        display: block;
+        text-align: center;
+      }
     }
+  }
+  &__item:not(:first-child):not(:last-child){
+    @include respond-to('mobile'){
+      margin-top: 10px;
+    };
   }
   &__block {
     display: flex;
