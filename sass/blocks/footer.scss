@@ -34,7 +34,7 @@
       text-transform: none;
       &-line {
         display: block;
-        text-align: center;
+        text-align: inherit;
       }
     }
   }
@@ -71,6 +71,7 @@
       flex: 0 0 100%;
       margin: none;
       align-items: center;
+      text-align: center;
     };
   }
 }
